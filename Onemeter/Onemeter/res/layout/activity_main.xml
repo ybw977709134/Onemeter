@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/backgroungcolor" >
+
+    </FrameLayout>
+  
+    <LinearLayout
+        android:id="@+id/main_layout" 
+        android:layout_width="match_parent"  
+        android:layout_height="50dp" 
+        android:background="@drawable/btn_seg_active_tab_zsb"
+         >  
+         <RelativeLayout  
+            android:id="@+id/leads_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" 
+            >  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/leads_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="30dp"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/icon_tabbar_leads" />  
+  
+                <TextView  
+                    android:id="@+id/leads_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="@string/leads"  
+                    android:textColor="#666666" />  
+            </LinearLayout>  
+         </RelativeLayout>
+         
+         <RelativeLayout  
+            android:id="@+id/newlead_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1">  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/newlead_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="30dp"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/icon_tabbar_newlead" />  
+  
+                <TextView  
+                    android:id="@+id/newlead_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="@string/newleads"  
+                    android:textColor="#666666" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+            <RelativeLayout  
+            android:id="@+id/statistics_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/statistics_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="30dp"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/icon_tabbar_statistics" />  
+  
+                <TextView  
+                    android:id="@+id/statistics_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="@string/statistics"  
+                    android:textColor="#666666" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+         <RelativeLayout  
+            android:id="@+id/settings_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/settings_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="30dp"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/icon_tabbar_settings" />  
+  
+                <TextView  
+                    android:id="@+id/settings_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="@string/settings"  
+                    android:textColor="#666666" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+     </LinearLayout>
+     <RelativeLayout
+        android:id="@+id/radio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"  
+        android:visibility="gone">
+        <Button
+            android:id="@+id/button_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_lose_style"
+            android:text="@string/lose" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button_lose"
+            android:background="@drawable/button_update_style"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:text="@string/update" />
+
+        <CheckBox
+            android:id="@+id/button_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@+id/button_update"
+            android:button="@drawable/checkbox_checked_style"
+            android:layout_alignParentLeft="true"
+            android:text="@string/check_all" />
+
+    </RelativeLayout>
+</LinearLayout>

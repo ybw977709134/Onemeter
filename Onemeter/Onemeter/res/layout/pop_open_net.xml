@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_pop_net"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/translucent_black"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_warning_popnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/no_network_warning" />
+
+        <TextView
+            android:id="@+id/tv_notice_popnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/msg_sys_net_no"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_popnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/no_network_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

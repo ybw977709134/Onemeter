@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onemeter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 读写存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name="com.onemeter.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_laun"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeActivity" >
+        <activity
+            android:name="com.onemeter.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.onemeter.activity.LoginActivity" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.onemeter.activity.MainActivity"
+            android:launchMode="singleTask" 
+            android:exported="true"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.ChagePassWordActivity" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadClassActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadSexActivity" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadContactActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewsAddLeadActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadStateActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadSourceActivity" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadEditActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewLeadEditSuccessActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.NewsLeadEditorActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.SearchLeadsActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadsUpdateActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadsDetailsActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadTimeActicity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadUpdateStateActivity"
+            android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadItemUpdateActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.LeadNewItemUpdateActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  >
+        </activity>
+          <activity android:name="com.onemeter.activity.NewAddLeadEditActivity" 
+                android:screenOrientation="portrait" >
+        </activity>
+          <activity android:name="com.onemeter.activity.NewsAddLeadEditorActivity"
+                android:screenOrientation="portrait"  >
+        </activity>
+        <activity android:name="com.onemeter.activity.Test"></activity>
+    </application>
+
+</manifest>

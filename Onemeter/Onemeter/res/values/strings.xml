@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Onemeter</string>
+    <string name="action_settings">Settings</string>
+   <!-- 提示信息 -->
+    <string name="msg_sys_param_error">参数错误</string>
+    <string name="msg_sys_unknown_exception">未知异常</string>
+    <string name="msg_request_error">网络异常…</string>
+    <string name="msg_sys_busy">系统繁忙请稍候再试</string>
+    <string name="msg_progressDialog">正在为您拼命加载</string>
+    <string name="msg_sys_word_error">字符不能超过500字</string>
+    <string name="msg_sys_net_unavailable">网络不可用，请打开网络</string>
+    <string name="msg_sys_net_no">没有网络，点击我打开网络</string>
+    <string name="msg_sys_Submit_server_confirms">正在提交服务器确认…</string>
+    <string name="msg_watting_request">请稍后.....</string>
+
+    
+    <!-- login界面 -->
+    <string name="name_password_erro">用户名或密码错误</string>
+    <string name="logins">登陆</string>
+    <string name="loginss">登录</string>
+    <string name="school_accounts">学校帐号</string>
+    <string name="my_accounts">我的帐号或手机号</string>
+    <string name="login_password">密码</string>
+    <string name="forget_password">忘记密码请联系学校管理员</string>
+    
+   
+    <!-- 主界面 -->
+    <string name="leads">我的潜客</string>
+    <string name="newleads">新增潜客</string>
+    <string name="statistics">统计</string>
+    <string name="settings">设置</string>
+    <string name="lose">失效</string>
+    <string name="update">更新</string>
+    <string name="check_all">全选</string>
+    <string name="back">返回</string>
+    
+     <!-- 我的潜客 -->
+    <string name="Multiselect">多选</string>
+    <string name="no_contact_time">未联系时间</string>
+    <string name="contact_leads">是否要联系此潜客</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="details">详情</string>
+    <string name="call_phone">拨打电话</string>
+    <string name="leads_details">潜客详情</string>
+    <string name="school_zone">校区</string>
+    <string name="add_date">添加日期</string>
+    <string name="cancel">取消</string>
+    <string name="update_leads_and_dynamic">更新潜客状态和动态</string>
+    <string name="lead">潜客:</string>
+    <string name="reservation_time">预约时间</string>
+    <string name="update_date">更新日期</string>
+    <string name="new_dynamic">最新动态</string>
+    <string name="state_lose">可在 状态-失效 中再次找到</string>
+    <string name="unlimited">不限</string>
+    <string name="start_time">起始时间</string>
+    <string name="please_start_time">请输入起始时间</string>
+    <string name="over_time">结束时间</string>
+    <string name="please_over_time">请输入结束时间</string>
+    <string name="filter">筛选</string>
+    <string name="search">搜索学生姓名、手机号</string>
+    <string name="today_before">前一天</string>
+    <string name="today_after">后一天</string>
+    <string name="history_dynamic">历史动态</string>
+    <!-- 设置模块 -->
+   <string name="login">登录账号</string>
+   <string name="passwrod">修改密码</string>
+   <string name="oldpasswrod">旧密码</string>
+   <string name="old_passwrod">请输入旧密码</string>
+   <string name="newspasswrod">新密码</string>
+   <string name="news_passwrod">请输入新密码</string>
+   <string name="determinepasswrod">确认密码</string>
+   <string name="determine_passwrod">请再次输入新密码</string>
+   <string name="changepassword">修改密码</string>
+   <string name="exit_login">退出登录</string>
+   <string name="determine_exit">您确定登出吗？</string>
+   <string name="one_week">1周</string>
+   <string name="two_week">2周</string>
+   <string name="third_week">3周</string>
+   <string name="third_week_up">3周以上</string>
+   <!-- 新增潜客 -->
+   <string name="next_step">下一步</string>
+   <string name="stu_information">学生信息</string>
+   <string name="contact_information">联系方式</string>
+   <string name="stu_name">学生姓名</string>
+   <string name="stu_course">感兴趣课程</string>
+   <string name="stu_sex">性别</string>
+   <string name="sex_secret">保密</string>
+   <string name="sex_boy">男</string>
+   <string name="sex_girl">女</string>
+   <string name="stu_birthday">生日</string>
+   <string name="stu_class">年级</string>
+   <string name="last_step">上一步</string>
+   <string name="add">添加</string>
+   <string name="parent_name">家长姓名</string>
+   <string name="parent_phone">家长手机号</string>
+   <string name="status">状态</string>
+   <string name="reservation_date">预约日期</string>
+   <string name="source">来源</string>
+   <string name="new_success">新增成功</string>
+   <string name="name">姓名</string>
+   <string name="phone">手机号码</string>
+   <string name="edit">编辑</string>
+   <string name="continue_to_add">继续添加</string>
+   <!-- 编辑潜客 -->
+   <string name="edit_newlead">编辑潜客</string>
+   <string name="save">保存</string>
+   <!-- 统计 -->
+   <string name="update_newlead_day">每日更新潜客数</string> 
+   <string name="ok">确定</string> 
+   <!-- 刷新 -->
+   <string name="pull_to_refresh_from_bottom_pull_label">下拉刷新…</string>
+   <string name="pull_to_refresh_from_bottom_release_label">放开以刷新…</string>
+   <string name="pull_to_refresh_from_bottom_refreshing_label">正在载入…</string>
+   <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+   <string name="pull_to_refresh_release_label">放开以刷新…</string>
+   <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+
+
+</resources>

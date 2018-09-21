@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/backgroungcolor"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bule" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="@string/update_leads_and_dynamic"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_itemupdate_dimiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_itemupdate_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/backgroungcolor"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lead" />
+
+        <TextView
+            android:id="@+id/textView_itemupdate_stu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/white">
+<Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"  
+        android:background="@color/gray" />
+    <LinearLayout
+        android:id="@+id/linearLayout_itemupdate_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button5"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/status"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_itemupdate_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_next" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_itemupdate_state"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:background="@color/gray" />
+    <LinearLayout
+        android:id="@+id/linearLayout_itemupdate_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/reservation_time"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_itemupdate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_itemupdate_time"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_item_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/update_date" 
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView_gx_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_item_date"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_gx_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" 
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_dynamic" 
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/editText_itemupdate_dynamic"
+            android:layout_width="100dp"
+            android:layout_height="40dip"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:textSize="16sp" 
+            android:text=""
+            android:cursorVisible="false"/>
+
+    </LinearLayout>
+       </RelativeLayout>
+    <View
+        android:id="@+id/view_text"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:background="@color/gray" />
+ 
+    <RelativeLayout 
+        android:id="@+id/rel_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_text"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="30dip"
+        android:background="@drawable/dynamic_bg_style">
+        
+        <TextView 
+            android:id="@+id/rel_dynamic_textView1"
+            android:layout_height="30dip"
+            android:layout_width="match_parent"
+            android:textColor="@color/bule"
+            android:textSize="15sp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/history_dynamic"/>
+    
+        <View
+        android:id="@+id/view_text2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"       
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rel_dynamic_textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/gray" />
+        
+        <ListView 
+            android:id="@+id/dynamic_listview"
+            android:layout_width="match_parent"       
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dynamic_listview"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/icon_leads_history" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/determine_exit" 
+        android:background="@drawable/photo_gallery_selector"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/button_qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/photo_cancel_selector"
+            android:text="@string/cancel" 
+            android:textColor="@color/bule"/>
+         <Button
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/button_qd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/ok" 
+            android:background="@drawable/photo_camera_selector"
+            android:textColor="@color/bule"/>
+    </LinearLayout>
+
+</RelativeLayout>

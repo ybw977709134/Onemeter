@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lose_gallery_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/gray"
+        android:text="@string/state_lose"
+        android:textSize="12sp" />
+
+    
+
+    <Button
+        android:id="@+id/bt_sx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lose_camera_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/lose"
+        android:textSize="16sp"
+        android:layout_marginTop="1dp" 
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/bt_qx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/lose_cancel_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textColor="@color/bule" />
+
+</LinearLayout>
